@@ -33,7 +33,7 @@ while True:
     if data.find ( '?commands' ) != -1:
       irc.send ( 'PRIVMSG #python-forum :PING, ?hi pytoxbot, ?quit pytoxbot, ?pie, ?spam pytoxbot, ?joke, ?source, ?help\r\n')
     if data.find ( '?source' ) != -1:
-      irc.send ( 'PRIVMSG #python-forum :http://code.google.com/p/pytoxbot/\r\n' )
+      irc.send ( 'PRIVMSG #python-forum :https://github.com/pytoxic/Pytoxbot/edit/master/pytoxbot.py\r\n' )
     if data.find ( '?help' ) !=-1:
       irc.send ( 'PRIVMSG #python-forum :If you need help on one of my commands please type help yourcommand\r\n' )
     if data.find ( 'help pytoxbot quit' ) !=-1:
@@ -50,6 +50,10 @@ while True:
       irc.send ( 'PRIVMSG #python-forum :function that lists or my commands\r\n' )
     if data.find ( 'help source' )!=-1:
       irc.send ( 'PRIVMSG #python-forum :function that lists the link to my source\r\n' )
+    if data.find ( 'Windows' )!=-1:
+      irc.send ( 'PRIVMSG #python-forum :please dont use that type of language here!' )
+    if data.find ( 'Linux' )!=-1:
+      irc.send ( 'PRIVMSG #python-forum :Yes we all know its awesome!\r\n' )
     print data
 
     
